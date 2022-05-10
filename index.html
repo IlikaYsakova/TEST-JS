@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="book">
+      <div class="container">
+        <h1>Contact Book</h1>
+        <form class="contactForm">
+          <input class="inputs input-item1" type="text" placeholder="Name" />
+          <input class="inputs input-item2" type="text" placeholder="Email" />
+          <input class="inputs input-item3" type="text" placeholder="Image" />
+        </form>
+        <div class="field">
+          <button class="btn" type="submit" value="submit">Add</button>
+        </div>
+      </div>
+
+      <div class="cardContainer">
+        <ul class="task-list"></ul>
+      </div>
+    </div>
+
+    <div class="main-modal">
+      <div class="inner-modal">
+        <div class="close">
+          <button class="btn-closer">X</button>
+        </div>
+        <input type="text" class="inp-edit" />
+        <button class="btn-save">Save</button>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

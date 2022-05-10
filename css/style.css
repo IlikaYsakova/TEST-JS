@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@200;400&family=Poppins:wght@500&family=Rajdhani:wght@300&family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  font-family: "Rajdhani", sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("https://images.wallpaperscraft.com/image/single/interior_japan_art_146561_3840x2400.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.book {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  min-width: 350px;
+  height: 45vh;
+  margin: 50px auto;
+  background-color: rgb(179, 178, 176, 0.6);
+  position: relative;
+  z-index: 100;
+}
+
+h1 {
+  color: hsl(0, 60%, 6%);
+  padding-top: 20px;
+}
+
+form {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+input,
+button {
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding-left: 5px;
+  text-indent: 5px;
+}
+
+button {
+  margin: 20px;
+  width: 85%;
+  background-color: white;
+}
+
+button:hover {
+  margin: 20px;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100px;
+  border: 1px solid black;
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  height: 26px;
+  width: 26px;
+}
+
+p {
+  margin: 3px;
+  line-height: 25px;
+}
+
+.container > input {
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.container:last-child > button {
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #2c4b77;
+  border: 0;
+  border-radius: 4px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.container:last-child > button:hover {
+  background-color: #ffffff;
+  transition: 0.4s;
+  color: #2c4b77;
+}
+
+.container:last-child {
+  text-align: center;
+}
+.cardContainer {
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px;
+  background: rgb(59, 99, 147);
+  background: linear-gradient(
+    85deg,
+    rgba(74, 151, 71, 0.589) 0%,
+
+    rgba(6, 6, 16, 1) 100%
+  );
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.task-list {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+ul li {
+  display: inline-block;
+  width: 7%;
+}
+.task-list button {
+  border-radius: 10px;
+  border-color: #fff;
+  width: 70px;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.705);
+  background-color: white;
+  justify-content: end;
+  margin-left: 25px;
+  align-items: center;
+}
+.main-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.inner-modal {
+  width: 500px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: auto;
+  text-align: center;
+}
+
+.close {
+  text-align: end;
+}
+
+@media only screen and (min-width: 600px) {
+  .cardContainer {
+    justify-content: space-around;
+  }
+
+  .cardContainer {
+    margin: 20px;
+  }
+}
